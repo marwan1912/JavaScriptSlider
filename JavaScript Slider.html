@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    
+    <style type="text/css">
+
+    
+        #pic{
+            
+            position:relative;
+            top:200px;
+            left:480px;
+            width:400px;
+            height:200px;
+            border:1px solid black;
+            
+        }
+    
+    </style>
+    
+    </head>
+
+
+
+<body>
+    
+<img id="pic">    
+    
+    <script type="text/javascript">
+        
+        var imgArray=['https://s-media-cache-ak0.pinimg.com/originals/a1/e8/40/a1e8401330e6e44f5d07f00fe3de4100.jpg','https://i.ytimg.com/vi/LDN6AXOZL3s/maxresdefault.jpg','https://c1.staticflickr.com/8/7426/26675548190_cef1150453_b.jpg'];
+        
+        var counter=0;
+        var time=3000;
+ 
+        function display(){
+            
+            if(counter==imgArray.length){
+                counter=0;
+            }
+        document.getElementById("pic").src=imgArray[counter];
+            counter++;
+            
+            setTimeout("display()",time);
+            
+        }
+        
+        display();
+     
+    </script>
+
+    </body>
+
+
+
+</html>
